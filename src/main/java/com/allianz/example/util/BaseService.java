@@ -23,8 +23,6 @@ public abstract class BaseService<DTO extends BaseDTO, Entity extends BaseEntity
 	protected abstract Entity requestDtoToExistEntity(RequestDTO dto, Entity entity);
 
 
-
-
 	public DTO save(RequestDTO requestDTO){
 		Entity entity = dtoToEntity(requestDTO);
 		entity = getRepository().save(entity);

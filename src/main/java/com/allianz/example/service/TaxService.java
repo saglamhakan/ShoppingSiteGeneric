@@ -1,11 +1,9 @@
 package com.allianz.example.service;
 
-import com.allianz.example.database.entity.SettingEntity;
 import com.allianz.example.database.entity.TaxEntity;
 import com.allianz.example.database.repository.TaxEntityRepository;
 import com.allianz.example.mapper.TaxMapper;
 import com.allianz.example.model.TaxDTO;
-import com.allianz.example.model.requestDTO.SettingRequestDTO;
 import com.allianz.example.model.requestDTO.TaxRequestDTO;
 import com.allianz.example.util.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +18,6 @@ public class TaxService extends BaseService<TaxDTO, TaxEntity, TaxRequestDTO> {
 	private TaxEntityRepository taxRepository;
 	@Autowired
 	private TaxMapper taxMapper;
-
 
 	@Override
 	protected JpaRepository<TaxEntity, UUID> getRepository() {
